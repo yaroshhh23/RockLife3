@@ -1,0 +1,108 @@
+﻿<Window x:Class="RockLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockLife"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" 
+        Height="700" 
+        Width="900"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+    
+    <Grid x:Name="MainWInd" 
+          ShowGridLines="True">
+        
+        <Viewbox Stretch="Uniform">
+            
+            <Border  
+                MinWidth="400" 
+                Background="White" 
+                VerticalAlignment="Center" 
+                Padding="30" 
+                MaxWidth="500"  
+                Height="400" 
+                Width="500" >
+                
+                <Border.Effect>
+                    <DropShadowEffect 
+                        BlurRadius="30" 
+                        Color="BLack"
+                        ShadowDepth="10"/>
+                </Border.Effect>
+
+                <StackPanel>
+                    
+                    <TextBlock 
+                        FontSize="20" 
+                        HorizontalAlignment="Center" 
+                        TextWrapping="Wrap" 
+                        Text="RockLife Store"/>
+                    
+                    <TextBlock 
+                        FontSize="18" 
+                        HorizontalAlignment="Center" 
+                        TextWrapping="Wrap" 
+                        Text="shop for rockstars"
+                        RenderTransformOrigin="0.423,-2.697"/>
+                    
+                    <Grid Background="White" 
+                          Height="290" 
+                          MinWidth="500" 
+                          MaxHeight="950" 
+                          Width="410">
+                        
+                        <Button  
+                            x:Name="MainLogin" 
+                            Content="Вход в аккаунт" 
+                            FontSize="16" 
+                            Background="White" 
+                            Foreground="Black" 
+                            Click="MainLogin_Click" 
+                            Margin="296,113,62,145" />
+                        
+                        <Button  
+                            x:Name="MainCatalog" 
+                            Content="Регистрация" 
+                            FontSize="16"  
+                            Background="White" 
+                            Foreground="Black"  
+                            Click="MainReg_Click" 
+                            Margin="296,158,63,100" />
+                        
+                        <TextBlock 
+                            FontSize="16"
+                            HorizontalAlignment="Left" 
+                            TextWrapping="Wrap" 
+                            Text="musical" 
+                            Margin="24,112,0,153"/>
+                        
+                        <TextBlock 
+                            FontSize="16" 
+                            HorizontalAlignment="Left" 
+                            TextWrapping="Wrap" 
+                            Text="instruments" 
+                            Margin="11,139,0,123"/>
+                        
+                        <TextBlock 
+                            FontSize="16" 
+                            HorizontalAlignment="Left" 
+                            TextWrapping="Wrap" 
+                            Text="for real stars" 
+                            Margin="9,167,0,96" 
+                            RenderTransformOrigin="0.468,-0.891"/>
+                        
+                    </Grid>
+
+                </StackPanel>
+
+            </Border>
+            
+        </Viewbox>
+        
+    </Grid>
+</Window>
